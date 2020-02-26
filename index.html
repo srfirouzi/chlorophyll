@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clorophyll</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    body{
+        margin:0;
+    }
+    .bar{
+        width:100%;
+        overflow:hidden;
+    }
+    .bar .item{
+        padding:8px 16px;
+        float:left;
+        width:auto;
+        border:none;
+        display:block;
+        outline:0;
+        text-decoration:none;
+        font-weight: bold;
+    }
+    .card{
+        box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        width: 800px;
+        margin: 6px auto;
+        padding: 16px;
+    }
+    
+    .table{
+        width: 100%;
+        border-collapse:collapse;
+        border-spacing:0;
+        display:table;
+    }
+
+    .table tr:first-child{
+        font-weight: bold;
+        border-bottom: gray 2px solid;
+    }
+
+    .table tr:not(:first-child){
+        border-top: gray 1px solid;
+    }
+
+    .table tr td{
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+    .cb{
+        width: 24px !important;
+        height: 24px !important;
+        display: inline-block;
+        border: solid 3px black;
+    }
+    
+    
+    </style>
+    <link rel='stylesheet' type='text/css' href='clorophyll.css'>
+</head>
+<body>
+    <div class="bar blue">
+        <a class="blue item light-blue-hover" href="https://github.com/srfirouzi/clorophyll">Github</a>
+
+    </div>
+    <div>
+
+    </div>
+    
+<div class="card">
+    <h1 style="text-align: center;">Clorophyll</h1>
+    <div style="width: 120px;margin: auto;">
+        <object style="margin: 2px auto;" type="image/svg+xml" data="icon.svg" width="120" height="120">
+        Your browser does not support SVG
+        </object>
+    </div>
+
+    <p>
+    simple Color Palette for web, base of The <a href="http://tango-project.org">Tango Desktop Project's</a> Color Palette, 
+
+    
+
+    <table class="table" style="text-align: center;">
+    <tr>
+    <td>color</td>
+    <td>light</td>
+    <td>normal</td>
+    <td>dark</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Purple</td>
+    <td style="background:#ad7fa8;color:#eeeeec;">#ad7fa8</td>
+    <td style="background:#75507b;color:#eeeeec;">#75507b</td>
+    <td style="background:#5c3566;color:#eeeeec;">#5c3566</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Blue</td>
+    <td style="background:#729fcf;color:#eeeeec;">#729fcf</td>
+    <td style="background:#3465a4;color:#eeeeec;">#3465a4</td>
+    <td style="background:#204a87;color:#eeeeec;">#204a87</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Green</td>
+    <td style="background:#8ae234;color:#2e3436;">#8ae234</td>
+    <td style="background:#73d216;color:#2e3436;">#73d216</td>
+    <td style="background:#4e9a06;color:#eeeeec;">#4e9a06</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Yellow</td>
+    <td style="background:#fce94f;color:#2e3436;">#fce94f</td>
+    <td style="background:#edd400;color:#2e3436;">#edd400</td>
+    <td style="background:#c4a000;color:#eeeeec;">#c4a000</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Orange</td>
+    <td style="background:#fcaf3e;color:#2e3436;">#fcaf3e</td>
+    <td style="background:#f57900;color:#2e3436;">#f57900</td>
+    <td style="background:#ce5c00;color:#eeeeec;">#ce5c00</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Red</td>
+    <td style="background:#ef2929;color:#eeeeec;">#ef2929</td>
+    <td style="background:#cc0000;color:#eeeeec;">#cc0000</td>
+    <td style="background:#a40000;color:#eeeeec;">#a40000</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Brown</td>
+    <td style="background:#e9b96e;color:#2e3436;">#e9b96e</td>
+    <td style="background:#c17d11;color:#eeeeec;">#c17d11</td>
+    <td style="background:#8f5902;color:#eeeeec;">#8f5902</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Gray</td>
+    <td style="background:#d3d7cf;color:#2e3436;">#d3d7cf</td>
+    <td style="background:#babdb6;color:#2e3436;">#babdb6</td>
+    <td style="background:#888a85;color:#eeeeec;">#888a85</td>
+    </tr>
+    <tr>
+    <td style="color:black;font-weight:bold;">Others</td>
+    <td style="background:#eeeeec;color:#2e3436;">#eeeeec(white)</td>
+    <td style="background:transparent; color:#2e3436;">transparent</td>
+    <td style="background:#2e3436;color:#eeeeec;">#2e3436(black)</td>
+    </tr>
+    </table>
+    <h6>* Tango Desktop Project's Color Palette,used in Clorophyll,all names changed </h6>
+    </p>
+
+    <h1>use</h1>
+    <p>
+    only add clorophyll.css on your page,than use class of page<br/>
+    <a  href="https://github.com/srfirouzi/clorophyll">https://github.com/srfirouzi/clorophyll</a>
+    <h3>example</h3>
+    <button style="border-style: solid;border-width:4px;padding: 10px 30px;" class=" blue green-hover yellow-active border-purple border-light-purple text-red-active">test</button>
+    <div class="light-gray" style="padding: 5px;">
+    class= blue green-hover yellow-active border-purple border-light-purple text-red-active
+    
+    </div>
+
+    </p>
+
+
+
+
+
+    <h1>Background class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb light-purple">  </span> light-purple </td>
+            <td><span class="cb purple">  </span> purple </td>
+            <td><span class="cb dark-purple"> </span> dark-purple </td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb light-blue">  </span> light-blue </td>
+            <td><span class="cb blue">  </span> blue </td>
+            <td><span class="cb dark-blue"> </span> dark-blue </td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb light-green">  </span> light-green </td>
+            <td><span class="cb green">  </span> green </td>
+            <td><span class="cb dark-green"> </span> dark-green </td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb light-yellow">  </span> light-yellow </td>
+            <td><span class="cb yellow">  </span> yellow </td>
+            <td><span class="cb dark-yellow"> </span> dark-yellow </td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb light-orange">  </span> light-orange </td>
+            <td><span class="cb orange">  </span> orange </td>
+            <td><span class="cb dark-orange"> </span> dark-orange </td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb light-red">  </span> light-red </td>
+            <td><span class="cb red">  </span> red </td>
+            <td><span class="cb dark-red"> </span> dark-red </td>
+        </tr>
+        
+        <tr>
+            <td>brown</td>
+            <td><span class="cb light-brown">  </span> light-brown </td>
+            <td><span class="cb brown">  </span> brown </td>
+            <td><span class="cb dark-brown"> </span> dark-brown </td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb light-gray">  </span> light-gray </td>
+            <td><span class="cb gray">  </span> gray </td>
+            <td><span class="cb dark-gray"> </span> dark-gray </td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb white">  </span> white </td>
+            <td><span class="cb transparent"> </span> transparent </td>
+            <td><span class="cb black">  </span> black </td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>Background hover class</h1>
+    <p>
+    
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb light-purple-hover"></span>  </span> light-purple-hover</td>
+            <td><span class="cb purple-hover"></span>  </span> purple-hover</td>
+            <td><span class="cb dark-purple-hover"></span> </span> dark-purple-hover</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb light-blue-hover"></span>  </span> light-blue-hover</td>
+            <td><span class="cb blue-hover"></span>  </span> blue-hover</td>
+            <td><span class="cb dark-blue-hover"></span> </span> dark-blue-hover</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb light-green-hover"></span>  </span> light-green-hover</td>
+            <td><span class="cb green-hover"></span>  </span> green-hover</td>
+            <td><span class="cb dark-green-hover"></span> </span> dark-green-hover</td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb light-yellow-hover"></span>  </span> light-yellow-hover</td>
+            <td><span class="cb yellow-hover"></span>  </span> yellow-hover</td>
+            <td><span class="cb dark-yellow-hover"></span> </span> dark-yellow-hover</td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb light-orange-hover"></span>  </span> light-orange-hover</td>
+            <td><span class="cb orange-hover"></span>  </span> orange-hover</td>
+            <td><span class="cb dark-orange-hover"></span> </span> dark-orange-hover</td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb light-red-hover"></span>  </span> light-red-hover</td>
+            <td><span class="cb red-hover"></span>  </span> red-hover</td>
+            <td><span class="cb dark-red-hover"></span> </span> dark-red-hover</td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="cb light-brown-hover"></span>  </span> light-brown-hover</td>
+            <td><span class="cb brown-hover"></span>  </span> brown-hover</td>
+            <td><span class="cb dark-brown-hover"></span> </span> dark-brown-hover</td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb light-gray-hover"></span>  </span> light-gray-hover</td>
+            <td><span class="cb gray-hover"></span>  </span> gray-hover</td>
+            <td><span class="cb dark-gray-hover"></span> </span> dark-gray-hover</td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb white-hover"></span>  </span> white-hover</td>
+            <td><span class="cb transparent-hover"></span> </span> transparent-hover</td>
+            <td><span class="cb black-hover"></span>  </span> black-hover</td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>Background active class</h1>
+    <p>
+    
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb light-purple-active"></span>  </span> light-purple-active</td>
+            <td><span class="cb purple-active"></span>  </span> purple-active</td>
+            <td><span class="cb dark-purple-active"></span> </span> dark-purple-active</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb light-blue-active"></span>  </span> light-blue-active</td>
+            <td><span class="cb blue-active"></span>  </span> blue-active</td>
+            <td><span class="cb dark-blue-active"></span> </span> dark-blue-active</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb light-green-active"></span>  </span> light-green-active</td>
+            <td><span class="cb green-active"></span>  </span> green-active</td>
+            <td><span class="cb dark-green-active"></span> </span> dark-green-active</td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb light-yellow-active"></span>  </span> light-yellow-active</td>
+            <td><span class="cb yellow-active"></span>  </span> yellow-active</td>
+            <td><span class="cb dark-yellow-active"></span> </span> dark-yellow-active</td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb light-orange-active"></span>  </span> light-orange-active</td>
+            <td><span class="cb orange-active"></span>  </span> orange-active</td>
+            <td><span class="cb dark-orange-active"></span> </span> dark-orange-active</td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb light-red-active"></span>  </span> light-red-active</td>
+            <td><span class="cb red-active"></span>  </span> red-active</td>
+            <td><span class="cb dark-red-active"></span> </span> dark-red-active</td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="cb light-brown-active"></span>  </span> light-brown-active</td>
+            <td><span class="cb brown-active"></span>  </span> brown-active</td>
+            <td><span class="cb dark-brown-active"></span> </span> dark-brown-active</td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb light-gray-active"></span>  </span> light-gray-active</td>
+            <td><span class="cb gray-active"></span>  </span> gray-active</td>
+            <td><span class="cb dark-gray-active"></span> </span> dark-gray-active</td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb white-active"></span>  </span> white-active</td>
+            <td><span class="cb transparent-active"></span> </span> transparent-active</td>
+            <td><span class="cb black-active"></span>  </span> black-active</td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>text class</h1>
+    <p>
+ 
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="text-light-purple">   text-light-purple</span> </td>
+            <td><span class="text-purple">   text-purple</span> </td>
+            <td><span class="text-dark-purple">  text-dark-purple</span> </td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="text-light-blue">   text-light-blue </span> </td>
+            <td><span class="text-blue">   text-blue </span></td>
+            <td><span class="text-dark-blue">  text-dark-blue </span></td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="text-light-green">   text-light-green</span> </td>
+            <td><span class="text-green">   text-green</span> </td>
+            <td><span class="text-dark-green">  text-dark-green</span> </td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="text-light-yellow">   text-light-yellow </span></td>
+            <td><span class="text-yellow">   text-yellow </span></td>
+            <td><span class="text-dark-yellow">  text-dark-yellow </span></td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="text-light-orange">   text-light-orange</span> </td>
+            <td><span class="text-orange">   text-orange </span></td>
+            <td><span class="text-dark-orange"> text-dark-orange</span> </td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="text-light-red">  text-light-red</span> </td>
+            <td><span class="text-red">   text-red </span></td>
+            <td><span class="text-dark-red">  text-dark-red </span></td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="text-light-brown">   text-light-brown</span> </td>
+            <td><span class="text-brown">   text-brown </span></td>
+            <td><span class="text-dark-brown">  text-dark-brown </span></td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="text-light-gray">  text-light-gray </span></td>
+            <td><span class="text-gray">   text-gray </span></td>
+            <td><span class="text-dark-gray">  text-dark-gray </span></td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="text-white">   text-white </span></td>
+            <td><span class="text-transparent">  text-transparent </span></td>
+            <td><span class="text-black">   text-black</span> </td>
+        </tr>
+    </table>
+
+    </p>
+
+    <h1>text hover class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="text-light-purple-hover">   text-light-purple-hover</span> </td>
+            <td><span class="text-purple-hover">   text-purple-hover</span> </td>
+            <td><span class="text-dark-purple-hover">  text-dark-purple-hover</span> </td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="text-light-blue-hover">   text-light-blue-hover </span> </td>
+            <td><span class="text-blue-hover">   text-blue-hover </span></td>
+            <td><span class="text-dark-blue-hover">  text-dark-blue-hover </span></td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="text-light-green-hover">   text-light-green-hover</span> </td>
+            <td><span class="text-green-hover">   text-green-hover</span> </td>
+            <td><span class="text-dark-green-hover">  text-dark-green-hover</span> </td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="text-light-yellow-hover">   text-light-yellow-hover </span></td>
+            <td><span class="text-yellow-hover">   text-yellow-hover </span></td>
+            <td><span class="text-dark-yellow-hover">  text-dark-yellow-hover </span></td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="text-light-orange-hover">   text-light-orange-hover</span> </td>
+            <td><span class="text-orange-hover">   text-orange-hover </span></td>
+            <td><span class="text-dark-orange-hover"> text-dark-orange-hover</span> </td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="text-light-red-hover">  text-light-red-hover</span> </td>
+            <td><span class="text-red-hover">   text-red-hover </span></td>
+            <td><span class="text-dark-red-hover">  text-dark-red-hover </span></td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="text-light-brown-hover">   text-light-brown-hover</span> </td>
+            <td><span class="text-brown-hover">   text-brown-hover </span></td>
+            <td><span class="text-dark-brown-hover">  text-dark-brown-hover </span></td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="text-light-gray-hover">  text-light-hover </span></td>
+            <td><span class="text-gray-hover">   text-gray-hover </span></td>
+            <td><span class="text-dark-gray-hover">  text-dark-gray-hover </span></td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="text-white-hover">   text-white-hover </span></td>
+            <td><span class="text-transparent-hover">  text-transparent-hover </span></td>
+            <td><span class="text-black-hover">   text-black-hover</span> </td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>text active class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="text-light-purple-active">   text-light-purple-active</span> </td>
+            <td><span class="text-purple-active">   text-purple-active</span> </td>
+            <td><span class="text-dark-purple-active">  text-dark-purple-active</span> </td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="text-light-blue-active">   text-light-blue-active </span> </td>
+            <td><span class="text-blue-active">   text-blue-active </span></td>
+            <td><span class="text-dark-blue-active">  text-dark-blue-active </span></td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="text-light-green-active">   text-light-green-active</span> </td>
+            <td><span class="text-green-active">   text-green-active</span> </td>
+            <td><span class="text-dark-green-active">  text-dark-green-active</span> </td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="text-light-yellow-active">   text-light-yellow-active </span></td>
+            <td><span class="text-yellow-active">   text-yellow-active </span></td>
+            <td><span class="text-dark-yellow-active">  text-dark-yellow-active </span></td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="text-light-orange-active">   text-light-orange-active</span> </td>
+            <td><span class="text-orange-active">   text-orange-active </span></td>
+            <td><span class="text-dark-orange-active"> text-dark-orange-active</span> </td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="text-light-red-active">  text-light-red-active</span> </td>
+            <td><span class="text-red-active">   text-red-active </span></td>
+            <td><span class="text-dark-red-active">  text-dark-red-active </span></td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="text-light-brown-active">   text-light-brown-active</span> </td>
+            <td><span class="text-brown-active">   text-brown-active </span></td>
+            <td><span class="text-dark-brown-active">  text-dark-brown-active </span></td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="text-light-gray-active">  text-light-active </span></td>
+            <td><span class="text-gray-active">   text-gray-active </span></td>
+            <td><span class="text-dark-gray-active">  text-dark-gray-active </span></td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="text-white-active">   text-white-active </span></td>
+            <td><span class="text-transparent-active">  text-transparent-active </span></td>
+            <td><span class="text-black-active">   text-black-active</span> </td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>border class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb border-light-purple">  </span>  border-light-purple </td>
+            <td><span class="cb border-purple">  </span>  border-purple </td>
+            <td><span class="cb border-dark-purple"> </span>  border-dark-purple </td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb border-light-blue">  </span>  border-light-blue </td>
+            <td><span class="cb border-blue">  </span>  border-blue </td>
+            <td><span class="cb border-dark-blue"> </span>  border-dark-blue </td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb border-light-green">  </span>  border-light-green </td>
+            <td><span class="cb border-green">  </span>  border-green </td>
+            <td><span class="cb border-dark-green"> </span>  border-dark-green </td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb border-light-yellow">  </span>  border-light-yellow </td>
+            <td><span class="cb border-yellow">  </span>  border-yellow </td>
+            <td><span class="cb border-dark-yellow"> </span>  border-dark-yellow </td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb border-light-orange">  </span>  border-light-orange </td>
+            <td><span class="cb border-orange">  </span>  border-orange </td>
+            <td><span class="cb border-dark-orange"> </span>  border-dark-orange </td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb border-light-red">  </span>  border-light-red </td>
+            <td><span class="cb border-red">  </span>  border-red </td>
+            <td><span class="cb border-dark-red"> </span>  border-dark-red </td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="cb border-light-brown">  </span>  border-light-brown </td>
+            <td><span class="cb border-brown">  </span>  border-brown </td>
+            <td><span class="cb border-dark-brown"> </span>  border-dark-brown </td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb border-light-gray">  </span>  border-light-gray </td>
+            <td><span class="cb border-gray">  </span>  border-gray </td>
+            <td><span class="cb border-dark-gray"> </span>  border-dark-gray </td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb border-white">  </span>  border-white </td>
+            <td><span class="cb border-transparent"> </span> border-transparent </td>
+            <td><span class="cb border-black">  </span>  border-black </td>
+        </tr>
+    </table>
+    <h6>*border color only set border color ,must before set size and style for border<h6>
+    </p>
+
+    <h1>border hover class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb border-light-purple-hover">  </span>  border-light-purple-hover</td>
+            <td><span class="cb border-purple-hover">  </span>  border-purple-hover</td>
+            <td><span class="cb border-dark-purple-hover"> </span>  border-dark-purple-hover</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb border-light-blue-hover">  </span>  border-light-blue-hover</td>
+            <td><span class="cb border-blue-hover">  </span>  border-blue-hover</td>
+            <td><span class="cb border-dark-blue-hover"> </span>  border-dark-blue-hover</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb border-light-green-hover">  </span>  border-light-green-hover</td>
+            <td><span class="cb border-green-hover">  </span>  border-green-hover</td>
+            <td><span class="cb border-dark-green-hover"> </span>  border-dark-green-hover</td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb border-light-yellow-hover">  </span>  border-light-yellow-hover</td>
+            <td><span class="cb border-yellow-hover">  </span>  border-yellow-hover</td>
+            <td><span class="cb border-dark-yellow-hover"> </span>  border-dark-yellow-hover</td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb border-light-orange-hover">  </span>  border-light-orange-hover</td>
+            <td><span class="cb border-orange-hover">  </span>  border-orange-hover</td>
+            <td><span class="cb border-dark-orange-hover"> </span>  border-dark-orange-hover</td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb border-light-red-hover">  </span>  border-light-red-hover</td>
+            <td><span class="cb border-red-hover">  </span>  border-red-hover</td>
+            <td><span class="cb border-dark-red-hover"> </span>  border-dark-red-hover</td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="cb border-light-brown-hover">  </span>  border-light-brown-hover</td>
+            <td><span class="cb border-brown-hover">  </span>  border-brown-hover</td>
+            <td><span class="cb border-dark-brown-hover"> </span>  border-dark-brown-hover</td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb border-light-gray-hover">  </span>  border-light-gray-hover</td>
+            <td><span class="cb border-gray-hover">  </span>  border-gray-hover</td>
+            <td><span class="cb border-dark-gray-hover"> </span>  border-dark-gray-hover</td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb border-white-hover">  </span>  border-white-hover</td>
+            <td><span class="cb border-transparent-hover"> </span> border-transparent-hover</td>
+            <td><span class="cb border-black-hover">  </span>  border-black-hover</td>
+        </tr>
+    </table>
+    <h6>*border color only set border color ,must before set size and style for border<h6>
+    </p>
+
+    <h1>border active class</h1>
+    <p>
+    <table class="table">
+        <tr>
+            <th>color</th>
+            <th>light</th>
+            <th>normal</th>
+            <th>dark</th>
+        </tr>
+        <tr>
+            <td>purple</td>
+            <td><span class="cb border-light-purple-active">  </span>  border-light-purple-active</td>
+            <td><span class="cb border-purple-active">  </span>  border-purple-active</td>
+            <td><span class="cb border-dark-purple-active"> </span>  border-dark-purple-active</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td><span class="cb border-light-blue-active">  </span>  border-light-blue-active</td>
+            <td><span class="cb border-blue-active">  </span>  border-blue-active</td>
+            <td><span class="cb border-dark-blue-active"> </span>  border-dark-blue-active</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td><span class="cb border-light-green-active">  </span>  border-light-green-active</td>
+            <td><span class="cb border-green-active">  </span>  border-green-active</td>
+            <td><span class="cb border-dark-green-active"> </span>  border-dark-green-active</td>
+        </tr>
+        <tr>
+            <td>yellow</td>
+            <td><span class="cb border-light-yellow-active">  </span>  border-light-yellow-active</td>
+            <td><span class="cb border-yellow-active">  </span>  border-yellow-active</td>
+            <td><span class="cb border-dark-yellow-active"> </span>  border-dark-yellow-active</td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td><span class="cb border-light-orange-active">  </span>  border-light-orange-active</td>
+            <td><span class="cb border-orange-active">  </span>  border-orange-active</td>
+            <td><span class="cb border-dark-orange-active"> </span>  border-dark-orange-active</td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td><span class="cb border-light-red-active">  </span>  border-light-red-active</td>
+            <td><span class="cb border-red-active">  </span>  border-red-active</td>
+            <td><span class="cb border-dark-red-active"> </span>  border-dark-red-active</td>
+        </tr>
+        <tr>
+            <td>brown</td>
+            <td><span class="cb border-light-brown-active">  </span>  border-light-brown-active</td>
+            <td><span class="cb border-brown-active">  </span>  border-brown-active</td>
+            <td><span class="cb border-dark-brown-active"> </span>  border-dark-brown-active</td>
+        </tr>
+        <tr>
+            <td>gray</td>
+            <td><span class="cb border-light-gray-active">  </span>  border-light-gray-active</td>
+            <td><span class="cb border-gray-active">  </span>  border-gray-active</td>
+            <td><span class="cb border-dark-gray-active"> </span>  border-dark-gray-active</td>
+        </tr>
+        <tr>
+            <td>other color</td>
+            <td><span class="cb border-white-active">  </span>  border-white-active</td>
+            <td><span class="cb border-transparent-active"> </span> border-transparent-active</td>
+            <td><span class="cb border-black-active">  </span>  border-black-active</td>
+        </tr>
+    </table>
+    <h6>*border color only set border color ,must before set size and style for border<h6>
+    </p>
+
+   <h1>liccense</h1>
+    CC-by-sa 2.5
+
+
+
+
+
+
+
+</div>
+    
+</body>
+</html>

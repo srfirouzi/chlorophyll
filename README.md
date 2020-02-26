@@ -1,6 +1,10 @@
 # Clorophyll
 
-simple CSS class for Color, used The [Tango Desktop Project's](http://tango-project.org) Color Palette
+<object type="image/svg+xml" data="icon.svg" width="120" height="120">
+    Your browser does not support SVG
+</object>
+
+simple Color Palette for web, base of The [Tango Desktop Project's](http://tango-project.org) Color Palette
 
 ## feature
 
@@ -82,6 +86,8 @@ only download Clorophyll.css on website and added on page then use it
 <td style="background:#2e3436;color:#eeeeec;">#2e3436(black)</td>
 </tr>
 </table>
+* Tango Desktop Project's Color Palette,used in Clorophyll,change names
+
 
 # liccense 
 
@@ -92,10 +98,6 @@ CC-by-sa 2.5
 - [x] background
 - [x] text
 - [x] border
-- [x] hover
-- [x] active
 - [ ] gradient
-  - [ ] background
-  - [ ] text
-  - [ ] border
+
 
