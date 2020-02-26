@@ -91,7 +91,7 @@ CC-by-sa 2.5
 # states
 - [x] background
 - [x] text
-- [ ] border
+- [x] border
 - [ ] alternative(black-white ,for child)
 - [ ] gradient
   - [ ] background
