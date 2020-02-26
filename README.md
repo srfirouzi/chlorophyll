@@ -90,7 +90,7 @@ CC-by-sa 2.5
 
 # states
 - [x] background
-- [ ] text
+- [x] text
 - [ ] border
 - [ ] alternative(black-white ,for child)
 - [ ] gradient
