@@ -89,7 +89,7 @@ CC-by-sa 2.5
 
 
 # states
-- [ ] background
+- [x] background
 - [ ] text
 - [ ] border
 - [ ] alternative(black-white ,for child)
