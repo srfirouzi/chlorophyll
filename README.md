@@ -1,4 +1,4 @@
-# Clorophyll
+# Chlorophyll
 
 <object type="image/svg+xml" data="icon.svg" width="120" height="120">
     Your browser does not support SVG
@@ -19,7 +19,7 @@ simple Color Palette for web, base of The [Tango Desktop Project's](http://tango
 
 # use
 
-only download Clorophyll.css on website and added on page then use it
+only download Chlorophyll.css on website and added on page then use it
 
 
 # colors
@@ -86,7 +86,7 @@ only download Clorophyll.css on website and added on page then use it
 <td style="background:#2e3436;color:#eeeeec;">#2e3436(black)</td>
 </tr>
 </table>
-* Tango Desktop Project's Color Palette,used in Clorophyll,change names
+* Tango Desktop Project's Color Palette,used in Chlorophyll,change names
 
 
 # liccense 
