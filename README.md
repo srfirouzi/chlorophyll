@@ -92,7 +92,8 @@ CC-by-sa 2.5
 - [x] background
 - [x] text
 - [x] border
-- [ ] alternative(black-white ,for child)
+- [x] hover
+- [x] active
 - [ ] gradient
   - [ ] background
   - [ ] text
